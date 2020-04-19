@@ -1,12 +1,30 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">
+        <!-- 如果只是在vue.config.js做了配置，每次用到svg文件还需如下操作,比较繁琐 -->
+        <svg>
+          <use xlink:href="#icon-denglong"></use>
+        </svg>
+
+        Home
+      </router-link> |
+      <router-link to="/about">
+        <svg-icon icon-class="yuanxiao"></svg-icon>
+      About
+      </router-link>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+// 若没有做自动导入，则还需引入denglong.svg
+import "@/icons/svg/denglong.svg";
+export default {
+  
+}
+</script>
 
 <style lang="scss">
 #app {
