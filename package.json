@@ -14,10 +14,10 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.3.0",
-    "@vue/cli-service": "^4.3.0",
+    "@vue/cli-service": "^5.0.8",
     "sass": "^1.26.3",
     "sass-loader": "^8.0.2",
-    "svg-sprite-loader": "^4.2.5",
+    "svg-sprite-loader": "^6.0.11",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
